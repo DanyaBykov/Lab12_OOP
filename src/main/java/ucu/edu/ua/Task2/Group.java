@@ -8,13 +8,14 @@ import java.util.Map;
 import java.util.UUID;
 
 public class Group<T> extends Task<T> {
-    public String groupUuid;
+    private String groupUuid;
     private List<Task<T>> tasks;
     private boolean isFrozen = false;
     private final Map<String, String> headers = new HashMap<>();
 
     public Group() {
         tasks = new ArrayList<>();
+        groupUuid = UUID.randomUUID().toString();
     }
 
     public Group<T> addTask(Task<T> task) {
