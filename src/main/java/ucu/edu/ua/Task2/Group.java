@@ -46,6 +46,9 @@ public class Group<T> extends Task<T> {
     @Override
     public void apply(T arg) {
         this.freeze();
+        if (this.getHeader("groupUuid") == null) {
+            throw new IllegalStateException("Group UUID is not set");
+        }
         for (Task<T> task : tasks) {
             task.apply(arg);
         }
