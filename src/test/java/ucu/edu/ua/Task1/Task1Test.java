@@ -1,9 +1,8 @@
+package ucu.edu.ua.Task1;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import ucu.edu.ua.Task1.ATM;
 
 public class Task1Test {
     private ATM atm;

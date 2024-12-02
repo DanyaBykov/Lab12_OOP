@@ -1,11 +1,10 @@
+package ucu.edu.ua.Task2;
 import java.util.function.Consumer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import ucu.edu.ua.Task2.Signature;
 
 public class SignatureTest {
     private Signature<String> signature;
